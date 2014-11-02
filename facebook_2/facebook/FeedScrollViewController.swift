@@ -8,14 +8,21 @@
 
 import UIKit
 
-class FeedScrollViewController: UIViewController {
-
+class FeedScrollViewController: UIViewController, UIScrollViewDelegate {
+    @IBOutlet weak var feedImage: UIImageView!
+    @IBOutlet weak var blackDressImage: UIImageView!
+    @IBAction func OnPhotoTap(sender: UITapGestureRecognizer) {
+        println("hi")
+    }
     @IBOutlet weak var scrollView: UIScrollView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       scrollView.contentSize = CGSize(width: 320, height: 1071)
+        scrollView.delegate = self
+        scrollView.contentSize = CGSize (width: 320, height:feedImage.frame.height
+        )
     }
 
     override func didReceiveMemoryWarning() {

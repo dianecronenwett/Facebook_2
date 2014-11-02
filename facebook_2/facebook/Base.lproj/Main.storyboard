@@ -170,9 +170,18 @@
                                             <segue destination="rLX-lp-QLN" kind="push" id="Zvi-6x-Uth"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_feed" id="jZG-mn-grM">
-                                        <rect key="frame" x="0.0" y="45" width="320" height="1025"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DNa-7X-5BR">
+                                        <rect key="frame" x="0.0" y="128" width="159" height="153"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding_feed" id="jZG-mn-grM">
+                                        <rect key="frame" x="0.0" y="45" width="320" height="1439"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="5Z2-dl-A0k" appends="YES" id="UJh-N9-lf4"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                             </scrollView>
@@ -180,11 +189,20 @@
                         <color key="backgroundColor" red="0.78823529411764703" green="0.80000000000000004" blue="0.82745098039215681" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="GZb-l1-Zcu"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="blackDressImage" destination="DNa-7X-5BR" id="pdW-OY-Jte"/>
+                        <outlet property="feedImage" destination="jZG-mn-grM" id="1eO-vH-rmg"/>
                         <outlet property="scrollView" destination="hE9-Rh-Zgz" id="IoV-Ef-Ysw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVf-Jj-psW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5Z2-dl-A0k">
+                    <connections>
+                        <action selector="OnPhotoTap:" destination="Td8-H2-cFa" id="gJN-2m-QNZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="705" y="-427"/>
         </scene>
@@ -224,6 +242,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxA-YI-elh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1059" y="-429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0fJ-yu-dLT">
+            <objects>
+                <viewController id="8oR-qY-CkP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jxZ-jr-489">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKU-dD-018" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="705" y="205"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PAr-aH-OYI">
@@ -339,7 +371,6 @@
         <image name="compose" width="320" height="46"/>
         <image name="feed_tab" width="27" height="27"/>
         <image name="form_bg" width="295" height="95"/>
-        <image name="home_feed" width="320" height="1025"/>
         <image name="logging_in_button" width="293" height="52"/>
         <image name="login_button_enabled" width="293" height="52"/>
         <image name="logo" width="174" height="43"/>
@@ -354,6 +385,7 @@
         <image name="requests_tab" width="27" height="27"/>
         <image name="settings" width="320" height="1800"/>
         <image name="thrillist_detail" width="320" height="1203"/>
+        <image name="wedding_feed" width="320" height="1438"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -24,7 +24,7 @@ class logInViewController: UIViewController {
                 self.activityIcon.stopAnimating()
                 self.loginButton.selected = false
             
-            if (self.emailField.text == "diane" && self.passwordField.text == "hi") {
+            if (self.emailField.text == "d" && self.passwordField.text == "h") {
                 self.performSegueWithIdentifier("app_segue", sender: self)
                 
             }

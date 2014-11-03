@@ -38,6 +38,33 @@
             </objects>
             <point key="canvasLocation" x="182" y="839"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="tEp-Ii-78p">
+            <objects>
+                <viewController id="mBU-6o-EHT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KKR-HI-TlG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding_me_square" id="zPJ-eW-whp">
+                                <rect key="frame" x="5" y="83" width="311" height="308"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5XA-hB-0aZ">
+                                <rect key="frame" x="258" y="30" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tB-35-aAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="-1033"/>
+        </scene>
         <!--Notifications-->
         <scene sceneID="xzH-lI-af1">
             <objects>
@@ -145,42 +172,32 @@
             <objects>
                 <viewController id="Td8-H2-cFa" customClass="FeedScrollViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RFI-gE-uMV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1588"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav" id="07p-Bj-iwm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1084"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hE9-Rh-Zgz">
-                                <rect key="frame" x="0.0" y="61" width="325" height="659"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hE9-Rh-Zgz">
+                                <rect key="frame" x="0.0" y="61" width="325" height="1679"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compose" id="n2X-BY-FWA">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oqv-4r-oJf">
-                                        <rect key="frame" x="8" y="280" width="301" height="190"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="rLX-lp-QLN" kind="push" id="Zvi-6x-Uth"/>
-                                        </connections>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DNa-7X-5BR">
-                                        <rect key="frame" x="0.0" y="128" width="159" height="153"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding_feed" id="jZG-mn-grM">
                                         <rect key="frame" x="0.0" y="45" width="320" height="1439"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding_me_square" id="DNa-7X-5BR">
+                                        <rect key="frame" x="8" y="128" width="147" height="146"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="5Z2-dl-A0k" appends="YES" id="UJh-N9-lf4"/>
+                                            <outletCollection property="gestureRecognizers" destination="B0q-QU-hA9" appends="YES" id="GYA-eT-dXR"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
@@ -190,17 +207,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="GZb-l1-Zcu"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="568"/>
+                    <size key="freeformSize" width="320" height="1588"/>
                     <connections>
-                        <outlet property="blackDressImage" destination="DNa-7X-5BR" id="pdW-OY-Jte"/>
+                        <outlet property="composeImage" destination="n2X-BY-FWA" id="Tyb-9f-rZt"/>
                         <outlet property="feedImage" destination="jZG-mn-grM" id="1eO-vH-rmg"/>
                         <outlet property="scrollView" destination="hE9-Rh-Zgz" id="IoV-Ef-Ysw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVf-Jj-psW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="5Z2-dl-A0k">
+                <tapGestureRecognizer id="B0q-QU-hA9">
                     <connections>
-                        <action selector="OnPhotoTap:" destination="Td8-H2-cFa" id="gJN-2m-QNZ"/>
+                        <action selector="onDressTap:" destination="Td8-H2-cFa" id="JB8-9d-wpX"/>
+                        <segue destination="mBU-6o-EHT" kind="modal" identifier="blackDressSegue" id="SZo-cR-sfi"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -210,9 +228,9 @@
         <scene sceneID="XyD-go-ikI">
             <objects>
                 <viewController id="rLX-lp-QLN" customClass="DetailViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="oCR-80-6ai">
+                    <scrollView key="view" autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="oCR-80-6ai">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thrillist_detail" id="Vy5-K9-PeB">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1203"/>
@@ -242,20 +260,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxA-YI-elh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1059" y="-429"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="0fJ-yu-dLT">
-            <objects>
-                <viewController id="8oR-qY-CkP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jxZ-jr-489">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yKU-dD-018" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="705" y="205"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PAr-aH-OYI">
@@ -386,6 +390,7 @@
         <image name="settings" width="320" height="1800"/>
         <image name="thrillist_detail" width="320" height="1203"/>
         <image name="wedding_feed" width="320" height="1438"/>
+        <image name="wedding_me_square" width="311" height="308"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

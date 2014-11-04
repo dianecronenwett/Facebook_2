@@ -14,14 +14,16 @@ class FeedScrollViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var blackDressImage: UIImageView!
     @IBAction func onDressTap(sender: UITapGestureRecognizer) {
-        //println("dresstapped")
-         performSegueWithIdentifier("blackDressSegue", sender: self)
+         println("dresstapped")
+         performSegueWithIdentifier("photoSegue", sender: sender)
     }
 
+    //var tappedImage = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ 
+    
    var containerHeight = feedImage.frame.height + composeImage.frame.height
     scrollView.contentInset.bottom = 180
         
@@ -31,6 +33,16 @@ class FeedScrollViewController: UIViewController, UIScrollViewDelegate {
     }
    
     //Add prepare for segue here
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var tappedGesture = sender as UITapGestureRecognizer
+        var destinationViewController = segue.destinationViewController as PhotoViewController
+        
+     var tappedImageView = tappedGesture.view as UIImageView
+    
+       destinationViewController.image = tappedImageView.image
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         

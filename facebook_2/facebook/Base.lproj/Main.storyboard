@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Pna-lC-nDE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Td8-H2-cFa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -38,32 +38,41 @@
             </objects>
             <point key="canvasLocation" x="182" y="839"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="tEp-Ii-78p">
             <objects>
-                <viewController id="mBU-6o-EHT" sceneMemberID="viewController">
+                <viewController id="mBU-6o-EHT" customClass="PhotoViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KKR-HI-TlG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding_me_square" id="zPJ-eW-whp">
-                                <rect key="frame" x="5" y="83" width="311" height="308"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5XA-hB-0aZ">
-                                <rect key="frame" x="258" y="30" width="46" height="30"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="g3U-PL-G8x">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding_altar" id="zPJ-eW-whp">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="574"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5XA-hB-0aZ">
+                                <rect key="frame" x="258" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="dynamicImageView" destination="zPJ-eW-whp" id="cUD-il-4do"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tB-35-aAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="-1033"/>
+            <point key="canvasLocation" x="112" y="-1099"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="xzH-lI-af1">
@@ -192,12 +201,44 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                     </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tablecloth" id="GGp-b6-vna">
+                                        <rect key="frame" x="157" y="128" width="163" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="EMA-q3-gmi" appends="YES" id="tez-47-qL0"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake" id="6LW-4C-gad">
+                                        <rect key="frame" x="157" y="235" width="215" height="106"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="NNA-7j-Ggk" appends="YES" id="ju5-fC-tB6"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding_altar" id="H5q-p1-FF3">
+                                        <rect key="frame" x="157" y="337" width="168" height="108"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="0Wr-HS-wYd" appends="YES" id="tI8-01-PvZ"/>
+                                        </connections>
+                                    </imageView>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding_me_square" id="DNa-7X-5BR">
                                         <rect key="frame" x="8" y="128" width="147" height="146"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="B0q-QU-hA9" appends="YES" id="GYA-eT-dXR"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableplacements" id="K2X-Qz-TlZ">
+                                        <rect key="frame" x="0.0" y="255" width="155" height="190"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="ccB-0M-FLr" appends="YES" id="cSk-dc-Mqb"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
@@ -212,13 +253,33 @@
                         <outlet property="composeImage" destination="n2X-BY-FWA" id="Tyb-9f-rZt"/>
                         <outlet property="feedImage" destination="jZG-mn-grM" id="1eO-vH-rmg"/>
                         <outlet property="scrollView" destination="hE9-Rh-Zgz" id="IoV-Ef-Ysw"/>
+                        <segue destination="mBU-6o-EHT" kind="modal" identifier="photoSegue" id="tOV-xA-54J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVf-Jj-psW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="B0q-QU-hA9">
+                <tapGestureRecognizer id="B0q-QU-hA9" userLabel="Black Dress Tap">
                     <connections>
                         <action selector="onDressTap:" destination="Td8-H2-cFa" id="JB8-9d-wpX"/>
-                        <segue destination="mBU-6o-EHT" kind="modal" identifier="blackDressSegue" id="SZo-cR-sfi"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="EMA-q3-gmi" userLabel="Tablecloth Tap">
+                    <connections>
+                        <action selector="onDressTap:" destination="Td8-H2-cFa" id="CyK-Bm-gqK"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="NNA-7j-Ggk" userLabel="Cake Tap">
+                    <connections>
+                        <action selector="onDressTap:" destination="Td8-H2-cFa" id="Sa2-EU-7oN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0Wr-HS-wYd" userLabel="Altar Tap">
+                    <connections>
+                        <action selector="onDressTap:" destination="Td8-H2-cFa" id="IKG-fb-5d6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ccB-0M-FLr" userLabel="Placemat Tap">
+                    <connections>
+                        <action selector="onDressTap:" destination="Td8-H2-cFa" id="bDz-FZ-dOZ"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -372,6 +433,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cake" width="960" height="640"/>
         <image name="compose" width="320" height="46"/>
         <image name="feed_tab" width="27" height="27"/>
         <image name="form_bg" width="295" height="95"/>
@@ -388,7 +450,10 @@
         <image name="people" width="320" height="1006"/>
         <image name="requests_tab" width="27" height="27"/>
         <image name="settings" width="320" height="1800"/>
+        <image name="tablecloth" width="960" height="640"/>
+        <image name="tableplacements" width="640" height="960"/>
         <image name="thrillist_detail" width="320" height="1203"/>
+        <image name="wedding_altar" width="800" height="533"/>
         <image name="wedding_feed" width="320" height="1438"/>
         <image name="wedding_me_square" width="311" height="308"/>
     </resources>

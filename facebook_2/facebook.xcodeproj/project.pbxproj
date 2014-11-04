@@ -20,7 +20,7 @@
 		E4738BDA19E7847D00DA903E /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4738BD919E7847D00DA903E /* MoreViewController.swift */; };
 		E49ADA5919EE029D0047B039 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49ADA5819EE029D0047B039 /* DetailViewController.swift */; };
 		E49ADA5B19EE11580047B039 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49ADA5A19EE11580047B039 /* logInViewController.swift */; };
-		E4A821AA1A074A7E003584BF /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A821A91A074A7E003584BF /* PhotoViewController.swift */; };
+		E4E9FA9E1A08684700150BC2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E9FA9D1A08684700150BC2 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		E4738BD919E7847D00DA903E /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		E49ADA5819EE029D0047B039 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E49ADA5A19EE11580047B039 /* logInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
-		E4A821A91A074A7E003584BF /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		E4E9FA9D1A08684700150BC2 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 		E4738BA319E7721700DA903E = {
 			isa = PBXGroup;
 			children = (
-				E4A821A91A074A7E003584BF /* PhotoViewController.swift */,
+				E4E9FA9D1A08684700150BC2 /* PhotoViewController.swift */,
 				E49ADA5819EE029D0047B039 /* DetailViewController.swift */,
 				E4738BAE19E7721700DA903E /* facebook */,
 				E4738BC419E7721700DA903E /* facebookTests */,
@@ -245,7 +245,7 @@
 				E4738BD219E7788600DA903E /* FeedScrollViewController.swift in Sources */,
 				E4738BD619E77DB100DA903E /* MessageViewController.swift in Sources */,
 				E49ADA5919EE029D0047B039 /* DetailViewController.swift in Sources */,
-				E4A821AA1A074A7E003584BF /* PhotoViewController.swift in Sources */,
+				E4E9FA9E1A08684700150BC2 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

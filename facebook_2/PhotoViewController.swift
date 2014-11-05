@@ -24,6 +24,9 @@ class PhotoViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func doneButton(sender: AnyObject) {
+     dismissViewControllerAnimated(true, completion: nil)
+    }
 //Add scrollview Height
     
 
